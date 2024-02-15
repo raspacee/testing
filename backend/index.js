@@ -4,7 +4,7 @@ const indexRouter = require("./routes/index.router.js");
 const app = express();
 
 // New comment  in backen
-app.use(express.json());
+
 app.use(express.urlencoded({ extended: true }));
 
 app.use("/", indexRouter);
